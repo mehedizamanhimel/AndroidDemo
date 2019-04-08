@@ -19,6 +19,7 @@ jobs:
     environment:
       # Customize the JVM maximum heap limit
       ANDROID_HOME: Users\\User\\AppData\\Local\\Android\\Sdk
+      ANDROID_SDK: /home/circleci/repo/Users/User/AppData/Local/Android/Sdk
       JVM_OPTS: -Xmx3200m
       TERM: dumb
 
