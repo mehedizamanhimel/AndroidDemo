@@ -1,14 +1,51 @@
-version: 2
-jobs:
-  build:
-    docker:
-    # specify the version you desire here
-    - image: circleci/android:api-28
-
-    #working_directory: ~/repo
-
-
-    steps:
-    - checkout
-
-    - run: gradle test
+machine:
+java:
+version: openjdk7
+ruby:
+version: 2.1.1
+environment:
+  GRADLE_OPTS: 'Dorg.
+  gradle.jvmargs="Xmx2048m
+  machine:
+  java:
+  version: openjdk7
+  environment:
+  GRADLE_OPTS: 'Dorg.
+  gradle.jvmargs="Xmx2048m
+  XX:+
+  HeapDumpOnOutOfMemoryError"'
+  dependencies:
+  pre:
+  echo
+  y | android update sdk noui
+  all
+  filter
+  platformtools,
+  tools,android23,
+  buildtools23.0.1,
+  extraandroidm2repository,
+  extraandroidsupport,
+  extragoog
+  lem2repository
+  chmod
+  +x gradlew
+  cache_directories:
+  ~/.
+  android
+  ~/.
+  gradle
+  override:
+  ./
+  gradlew dependencies
+  test:
+  override:
+  ./
+  gradlew test stacktrace;
+  ./
+  gradlew assembleDebug stacktrace;
+  general:
+  artifacts:
+  "**/
+  build/outputs/apk"
+  "**/
+  build/outputs/mapping/**/**/mapping.txt"
