@@ -1,0 +1,37 @@
+Findings :
+
+App level: 
+
+A splash screen for myTaxi is missing.
+A loader animation is missing.
+When the user has no internet connection, then user should get notification for for "no internet connectivity". 
+If the app is supporting landscape or rotation mode, then all the functions should be working properly in landscape/rotation.
+After pressing logout from main menu, a confirmation message like "Are you really want to logout?" can be added.
+If a user is searching for driver, then system should show the user drivers from his/her city only.  
+Instead of search, user may choose the driver from the map based on his/her current location. It will be convenient for user.
+Language selection section will add value if user is not ok with English.
+
+Login Page:
+
+Back button should make user exiting the application. 
+A notification for exiting the application would be helpful for user.
+At the login page, it would be more flexible if user can make the keyboard remove from screen by tapping anywhere in the content. Also clicking "login" button should remove the keyboard, so that user can get notification after providing wrong username and/or password.
+After providing Username and Password, the submit button should have a state or change the UI of submit button for being activated.
+If user tries to login with wrong credential, currently it is showing an error message of "Login Failed". It would be better for user to know if it is the username of password is invalid.
+
+HomePage:
+After login into app and active keyboard for searching a nearest driver, user can to  press the phone back button to remove the keyboard UI. It would be a better experience for user if he/she can make down the keyboard UI by tapping anywhere in the screen.
+If there is no driver found with the search result, then a notification "no driver found" would be convenient. 
+After login, if user tap on search filter to write keyboard for driver, then it keeps even after user press elements from other activity. 
+If user search driver in landscape mode from searchbar, no driver suggestion is showing.
+There should a cross (X) button at the end of searchbar, so that user can remove all the text by pressing that button.
+
+Driver Profile:
+
+At "Driver profile" page, the top most bar becomes white which makes the icons invisible (tested in two devices). 
+No "on screen back button" is available from driver profile page.
+
+Menubar:
+User profile is not showing the profile detail. 
+
+
